@@ -1,18 +1,17 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-
 const NAV = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/faculty', label: 'Our Faculty' },
   { href: '/training', label: 'Training' },
   { href: '/inspection-framework', label: 'Inspection Framework' },
+  { href: '/quality-framework', label: 'Quality Framework' },
   { href: '/activities', label: 'Activities' },
   { href: '/admission', label: 'Admission' },
   { href: '/contact', label: 'Contact' },
 ];
-
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
