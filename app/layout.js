@@ -31,6 +31,10 @@ export const metadata = {
   },
   description:
     'BIES — Brilliance International Education System, an AI Enabled School in PWD, Islamabad. Montessori through College.',
+
+    verification: {
+  google: 'OeppV0xDQDtz4VG4_H0TOJy97SVD4hE3_cdigfg4TE0',
+}, 
   metadataBase: new URL('https://www.bies.com.pk'),
 alternates: {
   canonical: '/',
