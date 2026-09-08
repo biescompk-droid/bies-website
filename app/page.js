@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Home',
+  title:'Brilliance International Education System — AI Enabled School',
   description:
     'BIES — Brilliance International Education System, an AI Enabled School in PWD, Islamabad. Montessori through College.',
 };

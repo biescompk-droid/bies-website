@@ -1,5 +1,6 @@
 import { Fraunces, Work_Sans, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
+import Script from 'next/script';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -31,7 +32,10 @@ export const metadata = {
   description:
     'BIES — Brilliance International Education System, an AI Enabled School in PWD, Islamabad. Montessori through College.',
   metadataBase: new URL('https://www.bies.com.pk'),
-  robots: { index: true, follow: true },
+alternates: {
+  canonical: '/',
+},
+robots: { index: true, follow: true },
   openGraph: {
     title: 'Brilliance International Education System — AI Enabled School',
     description: 'Igniting curiosity, illuminating potential — Montessori through College in PWD, Islamabad.',
@@ -49,10 +53,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${fraunces.variable} ${workSans.variable} ${plexMono.variable}`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+  <Header />
+  <main>{children}</main>
+  <Footer />
+
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-QB1PGDC4H8"
+    strategy="afterInteractive"
+  />
+
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QB1PGDC4H8');
+    `}
+  </Script>
+</body>
     </html>
   );
 }

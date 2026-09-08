@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Our Programs',
+  title: 'Academic Programs — Montessori to College',
   description: 'The full academic pathway at Brilliance International Education System — Montessori through College.',
 };
 
