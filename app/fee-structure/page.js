@@ -1,7 +1,25 @@
 import { getApi } from '../../lib/api';
 import DocumentList from '../../components/DocumentList';
 
-export const metadata = { title: 'Fee Structure', description: 'Tuition and fee details by programme at Brilliance International Education System.' };
+export const metadata = {
+  title: 'Fee Structure | BIES',
+  description:
+    'Tuition and fee details by programme at Brilliance International Education System.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://www.bies.com.pk/fee-structure',
+  },
+  openGraph: {
+    title: 'Fee Structure | BIES',
+    description:
+      'Tuition and fee details by programme at Brilliance International Education System.',
+    url: 'https://www.bies.com.pk/fee-structure',
+  },
+};
+
 export const revalidate = 0;
 
 export default async function FeeStructurePage() {
@@ -12,11 +30,14 @@ export default async function FeeStructurePage() {
     <>
       <section className="page-hero">
         <div className="wrap">
-          <span className="eyebrow" style={{ color: '#e7a8ad' }}>Fees</span>
+          <span className="eyebrow" style={{ color: '#e7a8ad' }}>
+            Fees
+          </span>
           <h1>Fee Structure</h1>
           <p>Tuition and fee details by programme.</p>
         </div>
       </section>
+
       <section className="section">
         <div className="wrap">
           <DocumentList
