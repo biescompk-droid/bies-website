@@ -327,6 +327,7 @@ export default function HomePage() {
               <img
                 src="https://blogger.googleusercontent.com/img/a/AVvXsEgqELs1WTwRVchEiQ1woS9MQJ6Z8gxU7QOdpsBFHlk0v52pY7lM8W-J9vs-Bz4RtOWm1FPCyonL_m7fe4ph-d3AO3OS-P8gOb2rw1TYQEFHcYAnGkZZo1vzvWrfd4HIE_VwYq_TmUYwJXzPVTd7h1onz2znGzFJPTvE7DhYCg0PmDLZyMvYaeGAW3ZY_L4"
                 alt="Muhammad Azmat Sajjad, Director of Brilliance International Education System"
+                loading="lazy"
               />
             </div>
 
