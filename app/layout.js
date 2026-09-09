@@ -28,11 +28,13 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata = {
   title: {
-    default: 'Brilliance International Education System — AI Enabled School',
+    default:
+      'Brilliance International Education System | AI-Enabled School in Islamabad',
     template: '%s | BIES',
   },
+
   description:
-    'BIES — Brilliance International Education System, an AI Enabled School in PWD, Islamabad. Montessori through College.',
+    'Brilliance International Education System (BIES) is an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
 
   verification: {
     google: 'OeppV0xDQDtz4VG4_H0TOJy97SVD4hE3_cdigfg4TE0',
@@ -50,18 +52,20 @@ export const metadata = {
   },
 
   openGraph: {
-    title: 'Brilliance International Education System — AI Enabled School',
+    title:
+      'Brilliance International Education System | AI-Enabled School in Islamabad',
     description:
-      'Igniting curiosity, illuminating potential — Montessori through College in PWD, Islamabad.',
-    url: 'https://www.bies.com.pk',
+      'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
+    url: 'https://www.bies.com.pk/',
     siteName: 'BIES',
   },
 
   twitter: {
     card: 'summary',
-    title: 'Brilliance International Education System — AI Enabled School',
+    title:
+      'Brilliance International Education System | AI-Enabled School in Islamabad',
     description:
-      'Igniting curiosity, illuminating potential — Montessori through College in PWD, Islamabad.',
+      'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
   },
 };
 

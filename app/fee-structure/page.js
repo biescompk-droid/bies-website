@@ -2,9 +2,9 @@ import { getApi } from '../../lib/api';
 import DocumentList from '../../components/DocumentList';
 
 export const metadata = {
-  title: 'Fee Structure | BIES',
+  title: 'BIES Fee Structure | Brilliance International Education System',
   description:
-    'Tuition and fee details by programme at Brilliance International Education System.',
+    'View the fee structure and tuition details for Brilliance International Education System (BIES) in Islamabad, including fees by programme.',
   robots: {
     index: true,
     follow: true,
@@ -13,9 +13,9 @@ export const metadata = {
     canonical: 'https://www.bies.com.pk/fee-structure',
   },
   openGraph: {
-    title: 'Fee Structure | BIES',
+    title: 'BIES Fee Structure | Brilliance International Education System',
     description:
-      'Tuition and fee details by programme at Brilliance International Education System.',
+      'View the fee structure and tuition details for Brilliance International Education System (BIES) in Islamabad, including fees by programme.',
     url: 'https://www.bies.com.pk/fee-structure',
   },
 };
@@ -31,15 +31,37 @@ export default async function FeeStructurePage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>
-            Fees
+            BIES Fees
           </span>
-          <h1>Fee Structure</h1>
-          <p>Tuition and fee details by programme.</p>
+
+          <h1>
+            Brilliance International Education System Fee Structure
+          </h1>
+
+          <p>
+            Tuition and fee details by programme at Brilliance International
+            Education System in Islamabad.
+          </p>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
+          <div className="section-head">
+            <span className="eyebrow">Fee Information</span>
+
+            <h2>
+              BIES School Fees by Programme
+            </h2>
+
+            <p>
+              Find the current tuition and fee information for programmes
+              offered at Brilliance International Education System (BIES).
+              The fee structure below provides details according to the
+              available programmes.
+            </p>
+          </div>
+
           <DocumentList
             items={items}
             nameKey="item_name"
