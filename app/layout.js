@@ -99,6 +99,7 @@ export default function RootLayout({ children }) {
                   },
                   telephone: '+923325637029',
                   email: 'bies.com.pk@gmail.com',
+                  logo: 'https://www.bies.com.pk/images/bies-logo.png',
                 },
                 {
                   '@type': 'WebSite',
