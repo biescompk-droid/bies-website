@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Academic Programs — Montessori to College',
-  description: 'The full academic pathway at Brilliance International Education System — Montessori through College.',
+  title: 'Academic Programs | Montessori to College | BIES Islamabad',
+  description:
+    'Explore academic programs at Brilliance International Education System (BIES) in Islamabad, from Montessori and Junior School through Secondary School and College.',
 };
 
 const PATHWAY = [
