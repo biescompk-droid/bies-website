@@ -212,6 +212,9 @@ export default function HomePage() {
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiItpxZUNI6oAAXkVsyHcu0OlFxa4d_JcC12lDxgoMUgv8wHcKvX6WllbjP5fVt1V6eqWLlubc5HqLwyvoL6GaX15gz4ZlMH6Rq4_h-_CewCG3Ba9AsEsIJfdyiUkr8pBa0PAM8YaFtXz2hjvUC63B5DHwj1eZ9x8NgCo6TRt4UOILznh7Dminmb7P5vV0/s16000/SCHOOL%20MAIN%20IMAGE.jpg"
               alt="Brilliance International Education System main campus in PWD Islamabad"
+              width="1600"
+              height="900"
+              loading="eager"
             />
             <span className="hero-tag">
               MAIN CAMPUS · PWD ISLAMABAD
