@@ -58,6 +58,15 @@ export const metadata = {
       'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
     url: 'https://www.bies.com.pk/',
     siteName: 'BIES',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.bies.com.pk/images/bies-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Brilliance International Education System — BIES',
+      },
+    ],
   },
 
   twitter: {
