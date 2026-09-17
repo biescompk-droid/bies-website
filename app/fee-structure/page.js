@@ -1,5 +1,4 @@
 import { getApi } from '../../lib/api';
-import DocumentList from '../../components/DocumentList';
 
 export const metadata = {
   title: 'BIES Fee Structure | Brilliance International Education System',
@@ -22,9 +21,20 @@ export const metadata = {
 
 export const revalidate = 0;
 
+function formatDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
 export default async function FeeStructurePage() {
-  const data = await getApi('fee-structure');
-  const items = data?.items || [];
+  const data = await getApi('fee-schedule-current');
+  const feeSchedule = data && data.success && data.file_url ? data : null;
 
   return (
     <>
@@ -62,13 +72,48 @@ export default async function FeeStructurePage() {
             </p>
           </div>
 
-          <DocumentList
-            items={items}
-            nameKey="item_name"
-            priceKey="amount"
-            descKey="description"
-            emptyMessage="Fee structure is being updated — check back soon."
-          />
+          {feeSchedule ? (
+            <div
+              style={{
+                background: '#fff',
+                border: '1px solid #e5e5e5',
+                borderRadius: '12px',
+                padding: '2rem',
+                maxWidth: '640px',
+                margin: '0 auto',
+                textAlign: 'center',
+              }}
+            >
+              <h3 style={{ marginBottom: '0.5rem' }}>{feeSchedule.title}</h3>
+              <p style={{ color: '#555', marginBottom: '1.5rem' }}>
+                Academic Session {feeSchedule.session}
+                {feeSchedule.effective_from && (
+                  <> &middot; Effective from {formatDate(feeSchedule.effective_from)}</>
+                )}
+              </p>
+              
+                href={feeSchedule.file_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  background: '#1a2b5c',
+                  color: '#fff',
+                  padding: '0.75rem 1.75rem',
+                  borderRadius: '8px',
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                }}
+              >
+                View / Download Fee Schedule
+                {feeSchedule.file_type ? ` (${feeSchedule.file_type.toUpperCase()})` : ''}
+              </a>
+            </div>
+          ) : (
+            <p style={{ textAlign: 'center', color: '#777' }}>
+              Fee structure is being updated — check back soon.
+            </p>
+          )}
         </div>
       </section>
     </>
