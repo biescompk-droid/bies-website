@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.bies.com.pk/sitemap.xml',
+    sitemap: 'https://bies.com.pk/sitemap.xml',
   };
 }

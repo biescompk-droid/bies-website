@@ -9,14 +9,14 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.bies.com.pk/contact',
+    canonical: 'https://bies.com.pk/contact',
   },
   openGraph: {
     title:
       'Contact BIES | Brilliance International Education System Islamabad',
     description:
       'Contact Brilliance International Education System (BIES) in PWD, Islamabad for admissions, fees, campus visits and general enquiries.',
-    url: 'https://www.bies.com.pk/contact',
+    url: 'https://bies.com.pk/contact',
   },
 };
 

@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://www.bies.com.pk';
+  const baseUrl = 'https://bies.com.pk';
 
   return [
     {

@@ -40,7 +40,7 @@ export const metadata = {
     google: 'OeppV0xDQDtz4VG4_H0TOJy97SVD4hE3_cdigfg4TE0',
   },
 
-  metadataBase: new URL('https://www.bies.com.pk'),
+  metadataBase: new URL('https://bies.com.pk'),
 
   alternates: {
     canonical: '/',
@@ -56,12 +56,12 @@ export const metadata = {
       'Brilliance International Education System | AI-Enabled School in Islamabad',
     description:
       'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
-    url: 'https://www.bies.com.pk/',
+    url: 'https://bies.com.pk/',
     siteName: 'BIES',
     type: 'website',
     images: [
       {
-        url: 'https://www.bies.com.pk/images/bies-logo.png',
+        url: 'https://bies.com.pk/images/bies-logo.png',
         width: 1200,
         height: 630,
         alt: 'Brilliance International Education System — BIES',
@@ -84,7 +84,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${fraunces.variable} ${workSans.variable} ${plexMono.variable}`}
       >
-
         {/* BIES Structured Data / Schema */}
         <script
           type="application/ld+json"
@@ -94,10 +93,10 @@ export default function RootLayout({ children }) {
               '@graph': [
                 {
                   '@type': 'School',
-                  '@id': 'https://www.bies.com.pk/#school',
+                  '@id': 'https://bies.com.pk/#school',
                   name: 'Brilliance International Education System — AI Enabled School',
                   alternateName: 'BIES',
-                  url: 'https://www.bies.com.pk/',
+                  url: 'https://bies.com.pk/',
                   description:
                     'Brilliance International Education System (BIES), an AI Enabled School in PWD, Islamabad, offering education from Montessori through College.',
                   address: {
@@ -108,28 +107,28 @@ export default function RootLayout({ children }) {
                   },
                   telephone: '+923325637029',
                   email: 'bies.com.pk@gmail.com',
-                  logo: 'https://www.bies.com.pk/images/bies-logo.png',
+                  logo: 'https://bies.com.pk/images/bies-logo.png',
                 },
                 {
                   '@type': 'WebSite',
-                  '@id': 'https://www.bies.com.pk/#website',
-                  url: 'https://www.bies.com.pk/',
+                  '@id': 'https://bies.com.pk/#website',
+                  url: 'https://bies.com.pk/',
                   name: 'Brilliance International Education System — AI Enabled School',
                   alternateName: 'BIES',
                   publisher: {
-                    '@id': 'https://www.bies.com.pk/#school',
+                    '@id': 'https://bies.com.pk/#school',
                   },
                 },
                 {
                   '@type': 'WebPage',
-                  '@id': 'https://www.bies.com.pk/#webpage',
-                  url: 'https://www.bies.com.pk/',
+                  '@id': 'https://bies.com.pk/#webpage',
+                  url: 'https://bies.com.pk/',
                   name: 'Brilliance International Education System — AI Enabled School',
                   isPartOf: {
-                    '@id': 'https://www.bies.com.pk/#website',
+                    '@id': 'https://bies.com.pk/#website',
                   },
                   about: {
-                    '@id': 'https://www.bies.com.pk/#school',
+                    '@id': 'https://bies.com.pk/#school',
                   },
                 },
               ],
@@ -154,7 +153,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-QB1PGDC4H8');
           `}
         </Script>
-
       </body>
     </html>
   );

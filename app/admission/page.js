@@ -7,14 +7,14 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.bies.com.pk/admission',
+    canonical: 'https://bies.com.pk/admission',
   },
   openGraph: {
     title:
       'BIES Admission | Brilliance International Education System Islamabad',
     description:
       'Apply for admission to Brilliance International Education System (BIES) in Islamabad. Annual admissions are open from March to June for Montessori through College.',
-    url: 'https://www.bies.com.pk/admission',
+    url: 'https://bies.com.pk/admission',
   },
 };
 

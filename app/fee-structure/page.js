@@ -10,13 +10,13 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.bies.com.pk/fee-structure',
+    canonical: 'https://bies.com.pk/fee-structure',
   },
   openGraph: {
     title: 'BIES Fee Structure | Brilliance International Education System',
     description:
       'View the fee structure and tuition details for Brilliance International Education System (BIES) in Islamabad, including fees by programme.',
-    url: 'https://www.bies.com.pk/fee-structure',
+    url: 'https://bies.com.pk/fee-structure',
   },
 };
 

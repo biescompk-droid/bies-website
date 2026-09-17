@@ -10,14 +10,14 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.bies.com.pk/standards-guidelines',
+    canonical: 'https://bies.com.pk/standards-guidelines',
   },
   openGraph: {
     title:
       'BIES Standards & Guidelines | Brilliance International Education System',
     description:
       'View academic standards, SLOs and teaching guidelines at Brilliance International Education System (BIES) in Islamabad.',
-    url: 'https://www.bies.com.pk/standards-guidelines',
+    url: 'https://bies.com.pk/standards-guidelines',
   },
 };
 
