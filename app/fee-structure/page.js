@@ -37,6 +37,8 @@ export default async function FeeStructurePage() {
   const feeSchedule = data && data.success && data.file_url ? data : null;
   const effectiveDate = feeSchedule ? formatDate(feeSchedule.effective_from) : '';
   const fileTypeLabel = feeSchedule && feeSchedule.file_type ? feeSchedule.file_type.toUpperCase() : '';
+  const buttonLabel = 'View or Download Fee Schedule' + (fileTypeLabel ? ' (' + fileTypeLabel + ')' : '');
+  const sessionLine = 'Academic Session ' + (feeSchedule ? feeSchedule.session : '') + (effectiveDate ? ' - Effective from ' + effectiveDate : '');
 
   return (
     <>
@@ -74,47 +76,51 @@ export default async function FeeStructurePage() {
             </p>
           </div>
 
-          {feeSchedule ? (
-            <div
-              style={{
-                background: '#fff',
-                border: '1px solid #e5e5e5',
-                borderRadius: '12px',
-                padding: '2rem',
-                maxWidth: '640px',
-                margin: '0 auto',
-                textAlign: 'center',
-              }}
-            >
-              <h3 style={{ marginBottom: '0.5rem' }}>{feeSchedule.title}</h3>
-              <p style={{ color: '#555', marginBottom: '1.5rem' }}>
-                Academic Session {feeSchedule.session}
-                {effectiveDate ? ' - Effective from ' + effectiveDate : ''}
-              </p>
-              
-                href={feeSchedule.file_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-block',
-                  background: '#1a2b5c',
-                  color: '#fff',
-                  padding: '0.75rem 1.75rem',
-                  borderRadius: '8px',
-                  fontWeight: 600,
-                  textDecoration: 'none',
-                }}
-              >
-                {'View or Download Fee Schedule' + (fileTypeLabel ? ' (' + fileTypeLabel + ')' : '')}
+          {feeSchedule && (
+            <div className="fee-schedule-card">
+              <h3>{feeSchedule.title}</h3>
+              <p>{sessionLine}</p>
+              <a href={feeSchedule.file_url} target="_blank" rel="noopener noreferrer" className="fee-schedule-btn">
+                {buttonLabel}
               </a>
             </div>
-          ) : (
+          )}
+
+          {!feeSchedule && (
             <p style={{ textAlign: 'center', color: '#777' }}>
               Fee structure is being updated - check back soon.
             </p>
           )}
         </div>
       </section>
+
+      <style>{`
+        .fee-schedule-card {
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 12px;
+          padding: 2rem;
+          max-width: 640px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .fee-schedule-card h3 {
+          margin-bottom: 0.5rem;
+        }
+        .fee-schedule-card p {
+          color: #555;
+          margin-bottom: 1.5rem;
+        }
+        .fee-schedule-btn {
+          display: inline-block;
+          background: #1a2b5c;
+          color: #fff;
+          padding: 0.75rem 1.75rem;
+          border-radius: 8px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      `}</style>
     </>
   );
 }
