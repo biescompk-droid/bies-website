@@ -35,6 +35,8 @@ function formatDate(iso) {
 export default async function FeeStructurePage() {
   const data = await getApi('fee-schedule-current');
   const feeSchedule = data && data.success && data.file_url ? data : null;
+  const effectiveDate = feeSchedule ? formatDate(feeSchedule.effective_from) : '';
+  const fileTypeLabel = feeSchedule && feeSchedule.file_type ? feeSchedule.file_type.toUpperCase() : '';
 
   return (
     <>
@@ -87,9 +89,7 @@ export default async function FeeStructurePage() {
               <h3 style={{ marginBottom: '0.5rem' }}>{feeSchedule.title}</h3>
               <p style={{ color: '#555', marginBottom: '1.5rem' }}>
                 Academic Session {feeSchedule.session}
-                {feeSchedule.effective_from && (
-                  <> &middot; Effective from {formatDate(feeSchedule.effective_from)}</>
-                )}
+                {effectiveDate ? ' - Effective from ' + effectiveDate : ''}
               </p>
               
                 href={feeSchedule.file_url}
@@ -105,13 +105,12 @@ export default async function FeeStructurePage() {
                   textDecoration: 'none',
                 }}
               >
-                View / Download Fee Schedule
-                {feeSchedule.file_type ? ` (${feeSchedule.file_type.toUpperCase()})` : ''}
+                {'View or Download Fee Schedule' + (fileTypeLabel ? ' (' + fileTypeLabel + ')' : '')}
               </a>
             </div>
           ) : (
             <p style={{ textAlign: 'center', color: '#777' }}>
-              Fee structure is being updated — check back soon.
+              Fee structure is being updated - check back soon.
             </p>
           )}
         </div>
