@@ -29,9 +29,7 @@ export default function ContactPage() {
             Contact BIES
           </span>
 
-          <h1>
-            Contact Brilliance International Education System
-          </h1>
+          <h1>Contact BIES Islamabad</h1>
 
           <p>
             Get in touch with Brilliance International Education System (BIES)
@@ -49,9 +47,9 @@ export default function ContactPage() {
             <h2>Visit or Contact Our Campus</h2>
 
             <p>
-              Parents and students can contact Brilliance International
-              Education System directly using the details below or visit our
-              PWD campus in Islamabad.
+            Parents and students can contact BIES directly using the details
+            below or visit our PWD campus in Islamabad for admissions,
+            enquiries and other school-related information.
             </p>
 
             <div className="card-list">

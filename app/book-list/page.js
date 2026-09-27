@@ -1,6 +1,10 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'Book List', description: 'Approved textbooks by class at Brilliance International Education System.' };
+export const metadata = {
+  title: 'BIES Book List & Textbooks | Islamabad',
+  description:
+    'View approved class-wise book lists and textbooks for students at Brilliance International Education System (BIES) in Islamabad.',
+};
 export const revalidate = 0;
 
 export default async function BookListPage() {
@@ -12,14 +16,20 @@ export default async function BookListPage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Book List</span>
-          <h1>Approved Textbooks</h1>
-          <p>Class-wise approved book lists.</p>
+          <h1>BIES Book List &amp; Textbooks</h1>
+         <p>
+         View the BIES approved book list, including class-wise textbooks
+         and required school books for students.
+        </p>
         </div>
       </section>
       <section className="section">
         <div className="wrap">
           {documents.length === 0 ? (
-            <div className="empty-state"><p>The book list is being updated — check back soon.</p></div>
+            <div className="empty-state"> <p>
+    The BIES book list is currently being updated. Please check back
+    soon for class-wise textbooks and approved school books.
+  </p></div>
           ) : (
             <div className="doc-items">
               {documents.map((d) => (

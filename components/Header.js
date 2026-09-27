@@ -29,8 +29,8 @@ export default function Header() {
       <div className="main-nav">
         <Link href="/" className="brand">
           <img
-            src="https://blogger.googleusercontent.com/img/a/AVvXsEgw8lxYByioxvKDqw7BDZk0l8HHCYSf6_MAgaYN0dnxSxFsgtTjO7gCVV3b1slHNpynjCTRXuu_5Txpdq_f76igQo9q1lYh5DTqnaVb_Vlc-VEj-5HO-GMwqzmA5mTZRfcWI342dcXGfxF0pjkyzH1xNGNo9rN6QgPtqpJ2pGLE9glL-b2GAMKjh-NC0hc=s312"
-            alt="BIES logo"
+              src="/images/bies-logo.png"
+              alt="Brilliance International Education System (BIES) logo"
           />
           <span className="brand-name">Brilliance International<br />Education System</span>
         </Link>

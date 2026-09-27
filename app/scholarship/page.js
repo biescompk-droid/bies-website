@@ -1,4 +1,8 @@
-export const metadata = { title: 'Scholarship', description: 'Merit-based scholarship opportunities at Brilliance International Education System.' };
+export const metadata = {
+  title: 'BIES Scholarships | Merit-Based Financial Support',
+  description:
+    'Explore merit-based scholarship opportunities at Brilliance International Education System (BIES) in Islamabad, including eligibility and scholarship details for students.',
+};
 export const revalidate = 0;
 
 import { getApi } from '../../lib/api';
@@ -13,7 +17,10 @@ export default async function ScholarshipPage() {
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Scholarship</span>
           <h1>Scholarship Opportunities</h1>
-          <p>Merit-based scholarships available to eligible students.</p>
+          <p>
+          Explore merit-based scholarship opportunities and eligibility information
+         for students at BIES Islamabad.
+         </p>
         </div>
       </section>
       <section className="section">

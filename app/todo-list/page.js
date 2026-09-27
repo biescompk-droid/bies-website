@@ -1,6 +1,10 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'To Do List', description: 'What you need to prepare before applying to Brilliance International Education System.' };
+export const metadata = {
+  title: 'BIES Admission To-Do List',
+  description:
+    'Find out what students and parents need to prepare before applying for admission to Brilliance International Education System (BIES).',
+};
 export const revalidate = 0;
 
 export default async function Page() {
@@ -12,8 +16,11 @@ export default async function Page() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Admissions</span>
-          <h1>To Do List</h1>
-          <p>What you need to prepare before applying.</p>
+          <h1>BIES Admission To-Do List</h1>
+          <p>
+         Find out what students and parents need to prepare before applying for
+         admission to BIES Islamabad.
+         </p>
         </div>
       </section>
       <section className="section">

@@ -1,7 +1,11 @@
 import { getApi } from '../../lib/api';
 import DocumentList from '../../components/DocumentList';
 
-export const metadata = { title: 'Uniform List', description: 'Official uniform details and guidelines for Brilliance International Education System.' };
+export const metadata = {
+  title: 'BIES School Uniform | Uniform Guidelines & Items',
+  description:
+    'View the official school uniform guidelines and approved uniform items for students at Brilliance International Education System (BIES) in Islamabad.',
+};
 export const revalidate = 0;
 
 export default async function UniformPage() {
@@ -13,8 +17,11 @@ export default async function UniformPage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Uniform</span>
-          <h1>Official Uniform Guidelines</h1>
-          <p>Approved uniform items by category.</p>
+          <h1>BIES School Uniform Guidelines</h1>
+          <p>
+          View approved school uniform items and guidelines for students at BIES
+          Islamabad.
+          </p>
         </div>
       </section>
       <section className="section">

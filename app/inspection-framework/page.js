@@ -166,10 +166,9 @@ export default async function InspectionFrameworkPage() {
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Quality &amp; Accountability</span>
           <h1>School Inspection Framework</h1>
           <p>
-            BIES holds itself to a rigorous, transparent quality framework covering six performance
-            standards, seventeen indicators and around 78 individual points of practice. Below is the
-            full framework alongside BIES&apos;s own current self-assessed rating for each area, so
-            parents and the community can judge our standards directly.
+          Explore the BIES school inspection framework covering six performance
+          standards, seventeen indicators and key areas of school quality, including
+          teaching, curriculum, student development, safeguarding and leadership.
           </p>
         </div>
       </section>

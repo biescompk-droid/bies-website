@@ -20,9 +20,7 @@ export default async function ActivitiesPage() {
             Activities & Photos
           </span>
 
-          <h1>
-            Brilliance International Education System Photos & Activities
-          </h1>
+         <h1>BIES Activities, Photos & Events in Islamabad</h1>
 
           <p>
             Explore photos and videos from school activities, assemblies,
@@ -37,9 +35,7 @@ export default async function ActivitiesPage() {
           <div className="section-head">
             <span className="eyebrow">Life at BIES</span>
 
-            <h2>
-              Brilliance International Education System Islamabad Photos
-            </h2>
+            <h2>BIES School Activities, Photos and Events</h2>
 
             <p>
               Take a look at life at BIES through photos and videos from our

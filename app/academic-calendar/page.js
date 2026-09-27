@@ -1,6 +1,7 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'Academic Calendar', description: 'Session dates and key academic events at BIES.' };
+export const metadata = { title: 'Academic Calendar & Session Dates | BIES Islamabad', description:
+  'View the BIES academic calendar, session dates and key academic events for students and parents in Islamabad.' };
 export const revalidate = 0;
 
 export default async function AcademicCalendarPage() {
@@ -12,14 +13,23 @@ export default async function AcademicCalendarPage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Academic Calendar</span>
-          <h1>Session Dates &amp; Events</h1>
-          <p>Key holidays, exams and events for the current academic session.</p>
+          <h1>Academic Calendar &amp; Session Dates at BIES</h1>
+          <p>
+           View the BIES academic calendar, including session dates, holidays,
+           exams and important academic events for students and parents.
+          </p>
         </div>
       </section>
       <section className="section">
         <div className="wrap">
           {events.length === 0 ? (
-            <div className="empty-state"><p>The academic calendar is being updated — check back soon.</p></div>
+            <div className="empty-state"><div className="empty-state">
+  <p>
+    The BIES academic calendar is currently being updated. Please check
+    back soon for upcoming session dates, holidays, exams and important
+    academic events.
+  </p>
+</div></div>
           ) : (
             <div className="doc-items">
               {events.map((e) => (

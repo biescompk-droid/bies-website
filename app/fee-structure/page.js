@@ -1,9 +1,9 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'BIES Fee Structure | Brilliance International Education System',
+  title: 'BIES Fee Structure & School Fees | Islamabad',
   description:
-    'View the fee structure and tuition details for Brilliance International Education System (BIES) in Islamabad, including fees by programme.',
+  'View the BIES fee structure, school fees and tuition details for Brilliance International Education System (BIES) in Islamabad, including fees by programme.',
   robots: {
     index: true,
     follow: true,
@@ -48,13 +48,12 @@ export default async function FeeStructurePage() {
             BIES Fees
           </span>
 
-          <h1>
-            Brilliance International Education System Fee Structure
-          </h1>
+          <h1>BIES Fee Structure &amp; School Fees</h1>
 
           <p>
-            Tuition and fee details by programme at Brilliance International
-            Education System in Islamabad.
+          View the current BIES fee structure, school fees and tuition details
+          by programme for students at Brilliance International Education System
+          in Islamabad.
           </p>
         </div>
       </section>
@@ -69,11 +68,11 @@ export default async function FeeStructurePage() {
             </h2>
 
             <p>
-              Find the current tuition and fee information for programmes
-              offered at Brilliance International Education System (BIES).
-              The fee structure below provides details according to the
-              available programmes.
-            </p>
+  Find the current tuition and fee information for programmes
+  offered at Brilliance International Education System (BIES).
+  The fee schedule below provides details for the available
+  academic programmes.
+</p>
           </div>
 
           {feeSchedule && (
@@ -88,8 +87,9 @@ export default async function FeeStructurePage() {
 
           {!feeSchedule && (
             <p style={{ textAlign: 'center', color: '#777' }}>
-              Fee structure is being updated - check back soon.
-            </p>
+  The BIES fee structure is currently unavailable. Please check back soon
+  for the latest school fees and fee schedule.
+</p>
           )}
         </div>
       </section>

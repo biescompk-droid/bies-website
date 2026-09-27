@@ -1,6 +1,8 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'Preparation Kit', description: 'Preparation kit and syllabus outlines for BIES entry assessment.' };
+export const metadata = { title: 'Preparation Kit',  description:
+    'Access the BIES admission preparation kit, syllabus outlines and study materials for the entry assessment at Brilliance International Education System in Islamabad.',
+};
 export const revalidate = 0;
 
 export default async function Page() {
@@ -12,8 +14,11 @@ export default async function Page() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Admissions</span>
-          <h1>Preparation Kit</h1>
-          <p>Syllabus outlines and study material for the entry assessment.</p>
+          <h1>BIES Admission Preparation Kit</h1>
+         <p>
+          Access syllabus outlines and study materials to help students prepare for
+          the BIES entry assessment in Islamabad.
+          </p>
         </div>
       </section>
       <section className="section">

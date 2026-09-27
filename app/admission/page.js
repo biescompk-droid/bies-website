@@ -49,11 +49,7 @@ export default function AdmissionPage() {
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>
             BIES Admissions
           </span>
-
-          <h1>
-            Brilliance International Education System Admission
-          </h1>
-
+          <h1>BIES Admission in Islamabad</h1>
           <p>
             Apply for admission to Brilliance International Education System
             (BIES) in PWD, Islamabad. Annual admissions run from March to June
@@ -70,10 +66,10 @@ export default function AdmissionPage() {
             <h2>How to Apply for Admission</h2>
 
             <p>
-              The Brilliance International Education System admission process
-              is designed to make applying straightforward for parents and
-              students. Follow these four steps to begin your application.
-            </p>
+            The BIES admission process is designed to make applying
+            straightforward for parents and students. Follow these four
+            steps to begin your application.
+           </p>
 
             <div className="steps">
               {STEPS.map((s) => (
@@ -141,7 +137,7 @@ export default function AdmissionPage() {
           <div className="section-head">
             <span className="eyebrow">Admissions Information</span>
 
-            <h2>Join Brilliance International Education System</h2>
+            <h2>Start Your BIES Admission Journey</h2>
 
             <p>
               BIES welcomes students across its educational pathway from

@@ -1,8 +1,9 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'BIES International School Quality Framework',
-  description: 'BIES International School Quality Framework — 10 domains, 100 standards, and BIES\'s own self-assessed quality ratings, rated through eCampus.',
+  title: 'BIES Quality Framework | School Standards & Ratings',
+  description:
+    'Explore the BIES quality framework, covering 10 domains and 100 standards for teaching, curriculum, student development, safeguarding, technology and school improvement in Islamabad.',
 };
 export const revalidate = 0;
 
@@ -217,10 +218,9 @@ export default async function QualityFrameworkPage() {
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Quality &amp; Accountability</span>
           <h1>BIES International School Quality Framework</h1>
           <p>
-            A framework for quality, accountability, continuous improvement and excellence — ten
-            domains, one hundred standards, and BIES&apos;s own current self-assessed rating for each
-            one, so parents and the community can judge our standards directly. Ratings are carried
-            out by school leadership through BIES eCampus.
+          Explore the BIES school quality framework covering 10 domains and 100
+          standards for teaching, curriculum, student development, safeguarding,
+          technology, leadership and continuous school improvement in Islamabad.
           </p>
         </div>
       </section>

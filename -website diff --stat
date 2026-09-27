@@ -1,0 +1,58 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/about/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/academic-calendar/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/activities/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/admission-policy/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/admission/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/book-list/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/contact/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/entry-test-papers/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/faculty/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/fee-structure/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/guidelines/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/inspection-framework/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/layout.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/preparation-kit/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/programs/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/quality-framework/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/robots.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/scholarship/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/sitemap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/standards-guidelines/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/todo-list/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/training/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/uniform/page.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/ContactForm.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/DocumentList.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/Footer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/Header.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/api.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'next.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+ app/about/page.js                | 82 [32m+++++++++++++++++++[m[31m---------------------[m
+ app/academic-calendar/page.js    | 18 [32m+++++++[m[31m--[m
+ app/activities/page.js           |  8 [32m+[m[31m---[m
+ app/admission-policy/page.js     | 19 [32m++++++++[m[31m--[m
+ app/admission/page.js            | 16 [32m+++[m[31m-----[m
+ app/book-list/page.js            | 18 [32m+++++++[m[31m--[m
+ app/contact/page.js              | 10 [32m++[m[31m---[m
+ app/entry-test-papers/page.js    | 16 [32m++++++[m[31m--[m
+ app/faculty/page.js              | 21 [32m+++++++[m[31m---[m
+ app/fee-structure/page.js        | 28 [32m+++++++[m[31m-------[m
+ app/guidelines/page.js           | 19 [32m+++++++[m[31m---[m
+ app/inspection-framework/page.js |  7 [32m++[m[31m--[m
+ app/page.js                      |  8 [32m++[m[31m--[m
+ app/preparation-kit/page.js      | 11 [32m++++[m[31m--[m
+ app/programs/page.js             |  4 [32m+[m[31m-[m
+ app/quality-framework/page.js    | 12 [32m+++[m[31m---[m
+ app/scholarship/page.js          | 11 [32m+++++[m[31m-[m
+ app/standards-guidelines/page.js | 20 [32m+++++[m[31m-----[m
+ app/todo-list/page.js            | 13 [32m+++++[m[31m--[m
+ app/training/page.js             | 10 [32m+++[m[31m--[m
+ app/uniform/page.js              | 13 [32m+++++[m[31m--[m
+ components/Footer.js             |  4 [32m+[m[31m-[m
+ components/Header.js             |  4 [32m+[m[31m-[m
+ 23 files changed, 224 insertions(+), 148 deletions(-)

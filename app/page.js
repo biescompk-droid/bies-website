@@ -253,7 +253,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">Quick Links</span>
-            <h2>Everything you need, in one place</h2>
+            <h2>Everything You Need for Your Child's Education</h2>
           </div>
 
           <div className="quicklinks-grid">
@@ -294,7 +294,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">Why BIES</span>
-            <h2>Built around how children actually learn</h2>
+           <h2>Learning Designed Around How Children Actually Learn</h2>
           </div>
 
           <div className="why-grid">
@@ -319,7 +319,7 @@ export default function HomePage() {
             }}
           >
             <span className="eyebrow">In His Own Words</span>
-            <h2>A message from our Director</h2>
+           <h2>A Message from the Director of BIES</h2>
           </div>
 
           <div className="director-feature">
@@ -356,7 +356,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">Recent Highlights</span>
-            <h2>What&apos;s been happening at BIES</h2>
+          <h2>Latest News and Activities at BIES</h2>
           </div>
 
           <div className="highlight-grid">

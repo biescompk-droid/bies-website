@@ -1,8 +1,9 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'Our Faculty',
-  description: 'Meet the teaching faculty at Brilliance International Education System.',
+  title: 'BIES Faculty & Teachers | Islamabad',
+  description:
+    'Meet the teachers and faculty at Brilliance International Education System (BIES) in Islamabad and learn about their qualifications and roles.',
 };
 
 export const revalidate = 0;
@@ -16,15 +17,25 @@ export default async function FacultyPage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Our Faculty</span>
-          <h1>Meet Our Teachers</h1>
-          <p>The educators behind every student&apos;s success at BIES.</p>
+          <h1>BIES Faculty &amp; Teachers</h1>
+          <p>
+  Meet the dedicated BIES faculty and teachers who support student
+  learning and development at Brilliance International Education System
+  in Islamabad.
+</p>
+        
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
           {faculty.length === 0 ? (
-            <div className="empty-state"><p>Faculty profiles are being updated — check back soon.</p></div>
+            <div className="empty-state"><div className="empty-state">
+  <p>
+    BIES faculty profiles are currently being updated. Please check
+    back soon to learn more about our teachers and their qualifications.
+  </p>
+</div></div>
           ) : (
             <div className="faculty-grid">
               {faculty.map((f) => (

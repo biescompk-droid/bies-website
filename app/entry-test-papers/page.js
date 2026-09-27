@@ -1,6 +1,10 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'Entry Test Papers', description: 'Past entry test papers and answer keys for Brilliance International Education System.' };
+export const metadata = {
+  title: 'BIES Entry Test Papers & Answer Keys | Islamabad',
+  description:
+    'View BIES entry test papers and answer keys for students applying to Brilliance International Education System (BIES) in Islamabad.',
+};
 export const revalidate = 0;
 
 export default async function Page() {
@@ -13,13 +17,19 @@ export default async function Page() {
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Admissions</span>
           <h1>Entry Test Papers</h1>
-          <p>Past papers and answer keys.</p>
+          <p>
+  View BIES past entry test papers and answer keys to help students
+  prepare for the admission test.
+</p>
         </div>
       </section>
       <section className="section">
         <div className="wrap">
           {documents.length === 0 ? (
-            <div className="empty-state"><p>This section is being updated — check back soon.</p></div>
+            <div className="empty-state">  <p>
+            BIES entry test papers and answer keys are currently being updated.
+            Please check back soon for available admission test papers.
+           </p></div>
           ) : (
             <div className="doc-items">
               {documents.map((d) => (

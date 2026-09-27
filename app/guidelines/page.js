@@ -1,6 +1,7 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'School Guidelines', description: 'School rules and guidelines for students and parents at BIES.' };
+export const metadata = { title: 'BIES School Guidelines & Rules | Islamabad',description:'Read the BIES school guidelines, rules and expectations for students and parents at Brilliance International Education System (BIES) in Islamabad.',
+};
 export const revalidate = 0;
 
 export default async function Page() {
@@ -11,15 +12,23 @@ export default async function Page() {
     <>
       <section className="page-hero">
         <div className="wrap">
-          <span className="eyebrow" style={{ color: '#e7a8ad' }}>Policies</span>
-          <h1>School Guidelines</h1>
-          <p>Rules and expectations for students and parents.</p>
+          <span className="eyebrow" style={{ color: '#e7a8ad' }}>School Guidelines</span>
+          <h1>BIES School Guidelines for Students &amp; Parents</h1>
+<p>
+  Review the BIES school guidelines, rules and expectations for
+  students and parents at Brilliance International Education System
+  in Islamabad.
+</p>
         </div>
       </section>
       <section className="section">
         <div className="wrap">
           {documents.length === 0 ? (
-            <div className="empty-state"><p>This section is being updated — check back soon.</p></div>
+            <div className="empty-state"><p>
+    BIES school guidelines are currently being updated. Please check
+    back soon for the latest school rules and guidelines for students
+    and parents.
+  </p></div>
           ) : (
             <div className="doc-items">
               {documents.map((d) => (

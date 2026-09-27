@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Montessori Training',
-  description: 'Montessori Teacher Training Programme by Brilliance International Education System — step-by-step modules, quiz, practicals, and a verified certificate.',
+  title: 'Montessori Teacher Training | BIES Islamabad',
+  description:
+    'Join the Montessori Teacher Training Programme by Brilliance International Education System (BIES), with guided modules, practical work, assessment and a verified certificate.',
 };
 
 export default function TrainingPage() {
@@ -10,7 +11,10 @@ export default function TrainingPage() {
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Training &amp; Courses</span>
           <h1>Montessori Teacher Training Programme</h1>
-          <p>Become a certified Montessori educator.</p>
+          <p>
+          Learn Montessori philosophy, classroom practice and teaching methods through
+          a structured teacher training programme by BIES.
+          </p>
         </div>
       </section>
 
