@@ -17,9 +17,9 @@ export default function Footer() {
             <p>H # 29, Street 17, PWD Block C, Islamabad, Pakistan</p>
             <a
               className="footer-map-link"
-              href="https://www.google.com/maps/search/?api=1&query=House+No+29%2C+Street+No+17%2C+Block+C%2C+PWD+Housing+Society%2C+Islamabad"
-              target="_blank"
-              rel="noreferrer"
+               href="https://www.google.com/maps/search/?api=1&query=33.57014376682579,73.1442551014338"
+               target="_blank"
+               rel="noopener noreferrer"
             >
               📍 View on Map
             </a>
