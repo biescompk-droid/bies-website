@@ -99,16 +99,32 @@ export default function RootLayout({ children }) {
                   url: 'https://bies.com.pk/',
                   description:
                     'Brilliance International Education System (BIES), an AI Enabled School in PWD, Islamabad, offering education from Montessori through College.',
+
                   address: {
                     '@type': 'PostalAddress',
                     streetAddress: 'H # 29, Street 17, PWD Block C',
                     addressLocality: 'Islamabad',
                     addressCountry: 'PK',
                   },
+
                   telephone: '+923325637029',
                   email: 'bies.com.pk@gmail.com',
                   logo: 'https://bies.com.pk/images/bies-logo.png',
+
+                  sameAs: [
+                    'https://web.facebook.com/BISS.edu',
+                    'https://www.youtube.com/@brillianceinternationaleducati',
+                  ],
+
+                  hasMap:
+                    'https://www.google.com/maps/search/?api=1&query=House+No+29%2C+Street+No+17%2C+Block+C%2C+PWD+Housing+Society%2C+Islamabad',
+
+                  areaServed: {
+                    '@type': 'City',
+                    name: 'Islamabad',
+                  },
                 },
+
                 {
                   '@type': 'WebSite',
                   '@id': 'https://bies.com.pk/#website',
@@ -119,6 +135,7 @@ export default function RootLayout({ children }) {
                     '@id': 'https://bies.com.pk/#school',
                   },
                 },
+
                 {
                   '@type': 'WebPage',
                   '@id': 'https://bies.com.pk/#webpage',
@@ -137,7 +154,9 @@ export default function RootLayout({ children }) {
         />
 
         <Header />
+
         <main>{children}</main>
+
         <Footer />
 
         <Script
