@@ -1,6 +1,8 @@
 import { getApi } from '../../lib/api';
 
-export const metadata = { title: 'BIES School Guidelines & Rules | Islamabad',description:'Read the BIES school guidelines, rules and expectations for students and parents at Brilliance International Education System (BIES) in Islamabad.',
+export const metadata = {  title: 'BIES School Guidelines & Rules | Islamabad',
+  description:
+    'Read the BIES school guidelines, rules and expectations for students and parents at Brilliance International Education System in Islamabad.',
 };
 export const revalidate = 0;
 

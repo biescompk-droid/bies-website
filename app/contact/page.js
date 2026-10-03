@@ -1,9 +1,9 @@
 import ContactForm from '../../components/ContactForm';
 
 export const metadata = {
-  title: 'Contact BIES | Brilliance International Education System Islamabad',
+  title: 'BIES Contact | Islamabad Phone, Address & Email',
   description:
-    'Contact Brilliance International Education System (BIES) in PWD, Islamabad for admissions, fees, campus visits and general enquiries.',
+    'Contact BIES in PWD Islamabad for admissions, fees and enquiries. Find the BIES address, phone number, WhatsApp and email.',
   robots: {
     index: true,
     follow: true,
@@ -12,10 +12,9 @@ export const metadata = {
     canonical: 'https://bies.com.pk/contact',
   },
   openGraph: {
-    title:
-      'Contact BIES | Brilliance International Education System Islamabad',
+    title: 'BIES Contact | Islamabad Phone, Address & Email',
     description:
-      'Contact Brilliance International Education System (BIES) in PWD, Islamabad for admissions, fees, campus visits and general enquiries.',
+      'Contact BIES in PWD Islamabad for admissions, fees and enquiries. Find the BIES address, phone number, WhatsApp and email.',
     url: 'https://bies.com.pk/contact',
   },
 };
@@ -47,9 +46,9 @@ export default function ContactPage() {
             <h2>Visit or Contact Our Campus</h2>
 
             <p>
-            Parents and students can contact BIES directly using the details
-            below or visit our PWD campus in Islamabad for admissions,
-            enquiries and other school-related information.
+              Parents and students can contact BIES directly using the details
+              below or visit our PWD campus in Islamabad for admissions,
+              enquiries and other school-related information.
             </p>
 
             <div className="card-list">
@@ -102,7 +101,9 @@ export default function ContactPage() {
       <section className="section section-alt">
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow">Brilliance International Education System</span>
+            <span className="eyebrow">
+              Brilliance International Education System
+            </span>
 
             <h2>Get in Touch With BIES Islamabad</h2>
 
@@ -110,6 +111,38 @@ export default function ContactPage() {
               Brilliance International Education System is located in PWD,
               Islamabad. Contact our team for information about admissions,
               school fees, campus visits and other school-related enquiries.
+            </p>
+
+            <p style={{ marginTop: '24px' }}>
+              Interested in joining BIES? Learn more about our{' '}
+              <a
+                href="/programs"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Academic Programs
+              </a>
+              , review the{' '}
+              <a
+                href="/admission"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                School Admission Process
+              </a>
+              , or view the{' '}
+              <a
+                href="/fee-structure"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                BIES Fee Structure
+              </a>
+              . You can also learn more{' '}
+              <a
+                href="/about"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                About BIES
+              </a>
+              .
             </p>
           </div>
         </div>

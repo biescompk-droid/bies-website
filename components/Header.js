@@ -4,11 +4,13 @@ import Link from 'next/link';
 const NAV = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/programs', label: 'Academic Programs' },
   { href: '/faculty', label: 'Our Faculty' },
   { href: '/training', label: 'Training' },
   { href: '/inspection-framework', label: 'Inspection Framework' },
   { href: '/quality-framework', label: 'Quality Framework' },
   { href: '/activities', label: 'Activities' },
+  { href: '/fee-structure', label: 'Fee Structure' },
   { href: '/admission', label: 'Admission' },
   { href: '/contact', label: 'Contact' },
 ];

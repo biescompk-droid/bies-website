@@ -1,7 +1,7 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'BIES Quality Framework | School Standards & Ratings',
+  title: 'BIES Quality Framework | School Standards & Ratings | Islamabad',
   description:
     'Explore the BIES quality framework, covering 10 domains and 100 standards for teaching, curriculum, student development, safeguarding, technology and school improvement in Islamabad.',
 };
@@ -216,7 +216,7 @@ export default async function QualityFrameworkPage() {
       <section className="page-hero">
         <div className="wrap">
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>Quality &amp; Accountability</span>
-          <h1>BIES International School Quality Framework</h1>
+          <h1>BIES Quality Framework | School Standards & Ratings</h1>
           <p>
           Explore the BIES school quality framework covering 10 domains and 100
           standards for teaching, curriculum, student development, safeguarding,

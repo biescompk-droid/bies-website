@@ -1,11 +1,10 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'BIES Faculty & Teachers | Islamabad',
+   title: 'BIES Faculty & Teachers | Islamabad',
   description:
-    'Meet the teachers and faculty at Brilliance International Education System (BIES) in Islamabad and learn about their qualifications and roles.',
+    'Meet the BIES faculty and teachers in Islamabad, including their roles, qualifications and experience at Brilliance International Education System.',
 };
-
 export const revalidate = 0;
 
 export default async function FacultyPage() {
@@ -30,12 +29,12 @@ export default async function FacultyPage() {
       <section className="section">
         <div className="wrap">
           {faculty.length === 0 ? (
-            <div className="empty-state"><div className="empty-state">
+            <div className="empty-state">
   <p>
     BIES faculty profiles are currently being updated. Please check
     back soon to learn more about our teachers and their qualifications.
   </p>
-</div></div>
+</div>
           ) : (
             <div className="faculty-grid">
               {faculty.map((f) => (

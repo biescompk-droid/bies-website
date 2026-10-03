@@ -29,7 +29,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata = {
   title: {
     default:
-      'Brilliance International Education System | AI-Enabled School in Islamabad',
+      'Brilliance International Education System | AI-Enabled School in PWD Islamabad',
     template: '%s | BIES',
   },
 
@@ -53,7 +53,7 @@ export const metadata = {
 
   openGraph: {
     title:
-      'Brilliance International Education System | AI-Enabled School in Islamabad',
+      'Brilliance International Education System | AI-Enabled School in PWD Islamabad',
     description:
       'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
     url: 'https://bies.com.pk/',
@@ -72,7 +72,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     title:
-      'Brilliance International Education System | AI-Enabled School in Islamabad',
+      'Brilliance International Education System | AI-Enabled School in PWD Islamabad',
     description:
       'Brilliance International Education System (BIES), an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
   },

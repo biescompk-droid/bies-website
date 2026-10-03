@@ -1,9 +1,9 @@
 import { getApi } from '../../lib/api';
 
 export const metadata = {
-  title: 'BIES Activities & Photos | Brilliance International Education System Islamabad',
+  title: 'BIES School Activities & Events | Islamabad',
   description:
-    'Explore photos and videos from Brilliance International Education System in Islamabad, including school activities, celebrations, assemblies and events.',
+    'Explore BIES school activities, photos, celebrations, assemblies and events at Brilliance International Education System in PWD, Islamabad.',
 };
 
 export const revalidate = 0;
@@ -20,7 +20,7 @@ export default async function ActivitiesPage() {
             Activities & Photos
           </span>
 
-         <h1>BIES Activities, Photos & Events in Islamabad</h1>
+          <h1>BIES School Activities, Photos &amp; Events in PWD Islamabad</h1>
 
           <p>
             Explore photos and videos from school activities, assemblies,
@@ -88,6 +88,52 @@ export default async function ActivitiesPage() {
               ))}
             </div>
           )}
+
+          <p style={{ marginTop: '24px' }}>
+            Learn more about our{' '}
+            <a
+              href="/programs"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              Academic Programs
+            </a>
+            , check the{' '}
+            <a
+              href="/academic-calendar"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              BIES Academic Calendar
+            </a>
+            , explore our{' '}
+            <a
+              href="/faculty"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              BIES Faculty &amp; Teachers
+            </a>
+            , or learn more{' '}
+            <a
+              href="/about"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              About BIES
+            </a>
+            . If you are interested in joining BIES, visit our{' '}
+            <a
+              href="/admission"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              School Admission
+            </a>{' '}
+            page. For more information, visit our{' '}
+            <a
+              href="/contact"
+              style={{ color: 'var(--navy)', fontWeight: 600 }}
+            >
+              Contact BIES
+            </a>{' '}
+            page.
+          </p>
         </div>
       </section>
     </>

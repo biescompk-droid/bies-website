@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Brilliance International Education System | AI-Enabled School in Islamabad',
+  title: 'Brilliance International Education System | School in PWD Islamabad',
   description:
-    'Brilliance International Education System (BIES) is an AI-enabled school in PWD, Islamabad, offering education from Montessori through College.',
+    'Brilliance International Education System (BIES) is a school in PWD Islamabad offering Montessori, Junior School, Secondary School and College education.',
 };
 
 const PATHWAY = [
@@ -180,7 +180,7 @@ export default function HomePage() {
             <h1>
               Brilliance International Education System
               <br />
-              (AI-Enabled School in Islamabad)
+              (AI-Enabled School in PWD Islamabad)
             </h1>
 
             <p className="hero-sub">

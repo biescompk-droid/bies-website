@@ -74,8 +74,7 @@ export default async function StandardsGuidelinesPage() {
           </span>
 
           <h1>
-            Brilliance International Education System Standards &amp;
-            Guidelines
+           BIES Academic Standards & Guidelines | Islamabad
           </h1>
 
          <p>

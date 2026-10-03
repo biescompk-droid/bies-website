@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'BIES Admission | Brilliance International Education System Islamabad',
+  title: 'School Admission in Islamabad | BIES',
   description:
-    'Apply for admission to Brilliance International Education System (BIES) in Islamabad. Annual admissions are open from March to June for Montessori through College.',
+    'Apply for admission to Brilliance International Education System (BIES) in PWD, Islamabad. Admissions are open from March to June for Montessori through College.',
   robots: {
     index: true,
     follow: true,
@@ -49,7 +49,9 @@ export default function AdmissionPage() {
           <span className="eyebrow" style={{ color: '#e7a8ad' }}>
             BIES Admissions
           </span>
-          <h1>BIES Admission in Islamabad</h1>
+
+          <h1>School Admission in PWD Islamabad | BIES</h1>
+
           <p>
             Apply for admission to Brilliance International Education System
             (BIES) in PWD, Islamabad. Annual admissions run from March to June
@@ -66,10 +68,10 @@ export default function AdmissionPage() {
             <h2>How to Apply for Admission</h2>
 
             <p>
-            The BIES admission process is designed to make applying
-            straightforward for parents and students. Follow these four
-            steps to begin your application.
-           </p>
+              The BIES admission process is designed to make applying
+              straightforward for parents and students. Follow these four
+              steps to begin your application.
+            </p>
 
             <div className="steps">
               {STEPS.map((s) => (
@@ -98,6 +100,20 @@ export default function AdmissionPage() {
                 style={{ color: 'var(--navy)', fontWeight: 600 }}
               >
                 To Do List
+              </a>
+              ,{' '}
+              <a
+                href="/preparation-kit"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Admission Preparation Kit
+              </a>
+              ,{' '}
+              <a
+                href="/entry-test-papers"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Entry Test Papers
               </a>
               , and{' '}
               <a
@@ -144,6 +160,25 @@ export default function AdmissionPage() {
               Montessori through College. Parents can use the online
               admission form above and review the admission policy, required
               steps and fee information before applying.
+            </p>
+
+            <p style={{ marginTop: '24px' }}>
+              For more information about BIES and its educational offerings,
+              explore our{' '}
+              <a
+                href="/programs"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Academic Programs
+              </a>{' '}
+              or visit the{' '}
+              <a
+                href="/contact"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Contact BIES
+              </a>{' '}
+              page.
             </p>
           </div>
         </div>
