@@ -180,7 +180,7 @@ export default function HomePage() {
             <h1>
               Brilliance International Education System
               <br />
-              (AI-Enabled School in PWD Islamabad)
+              (AI-Enabled School) in PWD Islamabad
             </h1>
 
             <p className="hero-sub">
