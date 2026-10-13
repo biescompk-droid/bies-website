@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Book List | Textbooks & School Books',
   description:
     'View the BIES book list, approved textbooks and class-wise school books for students at Brilliance International Education System in Islamabad.',
-};
+  path: '/book-list',
+});
 
 export const revalidate = 0;
 

@@ -1,23 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Fee Structure & School Fees | Islamabad',
   description:
     'View the BIES fee structure, school fees and tuition details for Brilliance International Education System in Islamabad, including fees by programme.',
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: 'https://bies.com.pk/fee-structure',
-  },
-  openGraph: {
-    title: 'BIES Fee Structure & School Fees | Islamabad',
-    description:
-      'View the BIES fee structure, school fees and tuition details for Brilliance International Education System in Islamabad, including fees by programme.',
-    url: 'https://bies.com.pk/fee-structure',
-  },
-};
+  path: '/fee-structure',
+});
 
 export const revalidate = 0;
 

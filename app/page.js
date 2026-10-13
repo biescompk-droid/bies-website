@@ -1,10 +1,12 @@
+import { pageMeta } from '../lib/seo';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Brilliance International Education System | School in PWD Islamabad',
+export const metadata = pageMeta({
+  title: 'Brilliance International Education System (BIES) | School in PWD Islamabad',
   description:
     'Brilliance International Education System (BIES) is a school in PWD Islamabad offering Montessori, Junior School, Secondary School and College education.',
-};
+  path: '/',
+});
 
 const PATHWAY = [
   {
@@ -160,7 +162,7 @@ const HIGHLIGHTS = [
   {
     tag: 'Results',
     title: 'Outstanding Results, Again',
-    body: 'Another strong year of academic performance across Matric and O-Level examinations.',
+    body: 'Another strong year of academic performance in Matric examinations.',
   },
 ];
 
@@ -168,7 +170,7 @@ export default function HomePage() {
   return (
     <>
       <div className="admissions-banner">
-        📢 Admissions Open for 2026–27 —{' '}
+        📢 Admissions 2026–27 —{' '}
         <Link href="/admission">Apply Now</Link>
       </div>
 

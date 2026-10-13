@@ -1,23 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import ContactForm from '../../components/ContactForm';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Contact | Islamabad Phone, Address & Email',
   description:
     'Contact BIES in PWD Islamabad for admissions, fees and enquiries. Find the BIES address, phone number, WhatsApp and email.',
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: 'https://bies.com.pk/contact',
-  },
-  openGraph: {
-    title: 'BIES Contact | Islamabad Phone, Address & Email',
-    description:
-      'Contact BIES in PWD Islamabad for admissions, fees and enquiries. Find the BIES address, phone number, WhatsApp and email.',
-    url: 'https://bies.com.pk/contact',
-  },
-};
+  path: '/contact',
+});
 
 export default function ContactPage() {
   return (

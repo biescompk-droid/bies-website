@@ -1,8 +1,10 @@
-export const metadata = {
-  title: 'Academic Programs | Montessori to College | BIES Islamabad',
+import { pageMeta } from '../../lib/seo';
+export const metadata = pageMeta({
+  title: 'Montessori to College Programs in PWD Islamabad | BIES',
   description:
     'Explore academic programs at Brilliance International Education System (BIES) in Islamabad, from Montessori and Junior School through Secondary School and College.',
-};
+  path: '/programs',
+});
 
 const PATHWAY = [
   {

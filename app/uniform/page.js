@@ -1,11 +1,13 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 import DocumentList from '../../components/DocumentList';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES School Uniform | Uniform Guidelines & Items',
   description:
     'View the official school uniform guidelines and approved uniform items for students at Brilliance International Education System (BIES) in Islamabad.',
-};
+  path: '/uniform',
+});
 
 export const revalidate = 0;
 

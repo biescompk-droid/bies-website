@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
-   title: 'BIES Faculty & Teachers | Islamabad',
+export const metadata = pageMeta({
+  title: 'BIES Faculty & Teachers | Islamabad',
   description:
     'Meet the BIES faculty and teachers in Islamabad, including their roles, qualifications and experience at Brilliance International Education System.',
-};
+  path: '/faculty',
+});
 export const revalidate = 0;
 
 export default async function FacultyPage() {

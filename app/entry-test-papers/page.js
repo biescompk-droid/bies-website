@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Entry Test Papers | Admission Test Preparation',
   description:
     'Find BIES entry test papers and answer keys to help students prepare for the BIES admission test at Brilliance International Education System in Islamabad.',
-};
+  path: '/entry-test-papers',
+});
 
 export const revalidate = 0;
 

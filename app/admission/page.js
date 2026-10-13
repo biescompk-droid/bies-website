@@ -1,22 +1,10 @@
-export const metadata = {
-  title: 'School Admission in Islamabad | BIES',
+import { pageMeta } from '../../lib/seo';
+export const metadata = pageMeta({
+  title: 'School Admission in PWD Islamabad | BIES',
   description:
-    'Apply for admission to Brilliance International Education System (BIES) in PWD, Islamabad. Admissions are open from March to June for Montessori through College.',
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: 'https://bies.com.pk/admission',
-  },
-  openGraph: {
-    title:
-      'BIES Admission | Brilliance International Education System Islamabad',
-    description:
-      'Apply for admission to Brilliance International Education System (BIES) in Islamabad. Annual admissions are open from March to June for Montessori through College.',
-    url: 'https://bies.com.pk/admission',
-  },
-};
+    'Apply for admission to Brilliance International Education System (BIES) in PWD, Islamabad. The main annual intake runs from March to June, for Montessori through College.',
+  path: '/admission',
+});
 
 const STEPS = [
   {
@@ -160,6 +148,32 @@ export default function AdmissionPage() {
               Montessori through College. Parents can use the online
               admission form above and review the admission policy, required
               steps and fee information before applying.
+            </p>
+
+            <p style={{ marginTop: '24px' }}>
+              Our campus is at House 29, Street 17, PWD Block C, Islamabad,
+              which makes BIES a convenient choice for families in PWD Housing
+              Society and nearby areas looking for Montessori, Junior School,
+              Secondary School (Matric) or College (FA, FSc, ICS and I.Com)
+              admission. The main annual intake runs from March to June.
+              Applicants for Middle and Secondary classes sit a short
+              assessment test and interview; our{' '}
+              <a
+                href="/entry-test-papers"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Entry Test Papers
+              </a>{' '}
+              and{' '}
+              <a
+                href="/preparation-kit"
+                style={{ color: 'var(--navy)', fontWeight: 600 }}
+              >
+                Preparation Kit
+              </a>{' '}
+              help students get ready. For questions about seats, fees or
+              scholarships, call 051-6103338 or message us on WhatsApp at
+              +92 332 5637029.
             </p>
 
             <p style={{ marginTop: '24px' }}>

@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Quality Framework | School Standards & Ratings | Islamabad',
   description:
     'Explore the BIES quality framework, covering 10 domains and 100 standards for teaching, curriculum, student development, safeguarding, technology and school improvement in Islamabad.',
-};
+  path: '/quality-framework',
+});
 export const revalidate = 0;
 
 const RATING_LABELS = {

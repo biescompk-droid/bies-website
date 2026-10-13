@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES School Inspection Framework | Islamabad',
   description:
     'BIES school quality standards, indicators, elements and self-assessed ratings, based on the UAE School Inspection Framework.',
-};
+  path: '/inspection-framework',
+});
 
 export const revalidate = 0;
 

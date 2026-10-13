@@ -1,8 +1,10 @@
-export const metadata = {
+import { pageMeta } from '../../lib/seo';
+export const metadata = pageMeta({
   title: 'About Brilliance International Education System | BIES Islamabad',
   description:
     'Learn about Brilliance International Education System (BIES), a school in PWD Islamabad offering Montessori to College education with a focus on academic excellence, character development and lifelong learning.',
-};
+  path: '/about',
+});
 
 const DIFFERENT = [
   {

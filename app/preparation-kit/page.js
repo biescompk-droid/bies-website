@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Admission Preparation Kit | Islamabad',
   description:
     'Access the BIES admission preparation kit, syllabus outlines and study materials for the entry assessment at Brilliance International Education System in Islamabad.',
-};
+  path: '/preparation-kit',
+});
 
 export const revalidate = 0;
 

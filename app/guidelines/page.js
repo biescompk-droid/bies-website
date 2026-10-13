@@ -1,9 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {  title: 'BIES School Guidelines & Rules | Islamabad',
+export const metadata = pageMeta({
+  title: 'BIES School Guidelines & Rules | Islamabad',
   description:
     'Read the BIES school guidelines, rules and expectations for students and parents at Brilliance International Education System in Islamabad.',
-};
+  path: '/guidelines',
+});
 export const revalidate = 0;
 
 export default async function Page() {

@@ -1,8 +1,10 @@
-export const metadata = {
+import { pageMeta } from '../../lib/seo';
+export const metadata = pageMeta({
   title: 'BIES Scholarships | Merit-Based Financial Support | Islamabad',
   description:
     'Explore BIES scholarships in Islamabad, including merit-based financial support, eligibility requirements and scholarship opportunities for students.',
-};
+  path: '/scholarship',
+});
 
 export const revalidate = 0;
 

@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Admission Checklist & To-Do List | Islamabad',
   description:
     'Find out what students and parents need to prepare before applying for admission to Brilliance International Education System (BIES).',
-};
+  path: '/todo-list',
+});
 
 export const revalidate = 0;
 

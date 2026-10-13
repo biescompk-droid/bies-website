@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Academic Calendar & Session Dates | Islamabad',
   description:
     'View the BIES academic calendar, session dates, holidays, exams and important academic events for students and parents in Islamabad.',
-};
+  path: '/academic-calendar',
+});
 
 export const revalidate = 0;
 

@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES School Activities & Events | Islamabad',
   description:
     'Explore BIES school activities, photos, celebrations, assemblies and events at Brilliance International Education System in PWD, Islamabad.',
-};
+  path: '/activities',
+});
 
 export const revalidate = 0;
 

@@ -1,23 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Academic Standards & Guidelines | Islamabad',
   description:
     'Explore academic standards, Student Learning Outcomes (SLOs) and teaching guidelines at Brilliance International Education System (BIES) in Islamabad.',
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: 'https://bies.com.pk/standards-guidelines',
-  },
-  openGraph: {
-    title: 'BIES Academic Standards & Guidelines | Islamabad',
-    description:
-      'Explore academic standards, Student Learning Outcomes (SLOs) and teaching guidelines at Brilliance International Education System (BIES) in Islamabad.',
-    url: 'https://bies.com.pk/standards-guidelines',
-  },
-};
+  path: '/standards-guidelines',
+});
 
 export const revalidate = 0;
 

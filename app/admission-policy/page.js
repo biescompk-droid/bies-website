@@ -1,10 +1,12 @@
+import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'BIES Admission Policy | Islamabad',
   description:
     'Read the BIES admission policy, application requirements and admission process for students applying to Brilliance International Education System in Islamabad.',
-};
+  path: '/admission-policy',
+});
 
 export const revalidate = 0;
 

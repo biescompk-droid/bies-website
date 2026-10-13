@@ -30,7 +30,7 @@ export const metadata = {
   title: {
     default:
       'Brilliance International Education System | AI-Enabled School in PWD Islamabad',
-    template: '%s | BIES',
+    template: '%s',
   },
 
   description:
@@ -41,10 +41,6 @@ export const metadata = {
   },
 
   metadataBase: new URL('https://bies.com.pk'),
-
-  alternates: {
-    canonical: '/',
-  },
 
   robots: {
     index: true,
@@ -70,7 +66,7 @@ export const metadata = {
   },
 
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title:
       'Brilliance International Education System | AI-Enabled School in PWD Islamabad',
     description:
@@ -104,10 +100,17 @@ export default function RootLayout({ children }) {
                     '@type': 'PostalAddress',
                     streetAddress: 'H # 29, Street 17, PWD Block C',
                     addressLocality: 'Islamabad',
+                    addressRegion: 'Islamabad Capital Territory',
                     addressCountry: 'PK',
                   },
 
-                  telephone: '+923325637029',
+                  telephone: ['+92516103338', '+923325637029'],
+                  image: 'https://bies.com.pk/images/bies-logo.png',
+                  geo: {
+                    '@type': 'GeoCoordinates',
+                    latitude: 33.57014376682579,
+                    longitude: 73.1442551014338,
+                  },
                   email: 'bies.com.pk@gmail.com',
                   logo: 'https://bies.com.pk/images/bies-logo.png',
 
@@ -117,7 +120,7 @@ export default function RootLayout({ children }) {
                   ],
 
                   hasMap:
-                    'https://www.google.com/maps/search/?api=1&query=House+No+29%2C+Street+No+17%2C+Block+C%2C+PWD+Housing+Society%2C+Islamabad',
+                    'https://www.google.com/maps/search/?api=1&query=33.57014376682579,73.1442551014338',
 
                   areaServed: {
                     '@type': 'City',
@@ -134,20 +137,7 @@ export default function RootLayout({ children }) {
                   publisher: {
                     '@id': 'https://bies.com.pk/#school',
                   },
-                },
-
-                {
-                  '@type': 'WebPage',
-                  '@id': 'https://bies.com.pk/#webpage',
-                  url: 'https://bies.com.pk/',
-                  name: 'Brilliance International Education System — AI Enabled School',
-                  isPartOf: {
-                    '@id': 'https://bies.com.pk/#website',
-                  },
-                  about: {
-                    '@id': 'https://bies.com.pk/#school',
-                  },
-                },
+                }
               ],
             }),
           }}

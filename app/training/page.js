@@ -1,8 +1,10 @@
-export const metadata = {
+import { pageMeta } from '../../lib/seo';
+export const metadata = pageMeta({
   title: 'Montessori Teacher Training in Islamabad | BIES',
   description:
     'Join the Montessori Teacher Training Programme by Brilliance International Education System (BIES), with guided modules, practical work, assessment and a verified certificate.',
-};
+  path: '/training',
+});
 
 export default function TrainingPage() {
   return (
