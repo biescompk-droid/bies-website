@@ -1,5 +1,5 @@
-import { pageMeta } from '../../lib/seo';
 import { getApi } from '../../lib/api';
+import { pageMeta } from '../../lib/seo';
 
 export const metadata = pageMeta({
   title: 'BIES Quality Framework | School Standards & Ratings | Islamabad',
