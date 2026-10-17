@@ -2,9 +2,9 @@ import { pageMeta } from '../lib/seo';
 import Link from 'next/link';
 
 export const metadata = pageMeta({
-  title: 'Brilliance International Education System (BIES) | School in PWD Islamabad',
+  title: 'BIES School in PWD Islamabad | Brilliance International Education System',
   description:
-    'Brilliance International Education System (BIES) is a school in PWD Islamabad offering Montessori, Junior School, Secondary School and College education.',
+    'BIES (Brilliance International Education System) is an AI-enabled school in PWD Islamabad, Montessori to College. Admissions open 2026-27. Call 051-6103338.',
   path: '/',
 });
 
